@@ -1,0 +1,99 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>GymSystem</AssemblyName>
+    <RootNamespace>GymSystem</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmTrainers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmTrainers.Designer.cs">
+      <DependentUpon>frmTrainers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmTrainers.resx">
+      <DependentUpon>frmTrainers.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmMembers.Designer.cs">
+      <DependentUpon>frmMembers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmMembers.resx">
+      <DependentUpon>frmMembers.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmSubscriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmSubscriptions.Designer.cs">
+      <DependentUpon>frmSubscriptions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmSubscriptions.resx">
+      <DependentUpon>frmSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmMemberSubs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmMemberSubs.Designer.cs">
+      <DependentUpon>frmMemberSubs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmMemberSubs.resx">
+      <DependentUpon>frmMemberSubs.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmPayments.Designer.cs">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmPayments.resx">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmReviews.Designer.cs">
+      <DependentUpon>frmReviews.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmReviews.resx">
+      <DependentUpon>frmReviews.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
